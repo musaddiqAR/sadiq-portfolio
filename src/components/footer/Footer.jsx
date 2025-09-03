@@ -1,20 +1,32 @@
 import React from "react";
 import styles from "./Footer.module.css";
-
+import resume from "../../assets/resume.pdf";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
-        <a href="https://github.com/musaddiqAR" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/musaddiqAR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GITHUB
         </a>
-        <a href="https://www.linkedin.com/in/mohammed-sadiq-727bb832a" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/mohammed-sadiq-727bb832a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LINKEDIN
         </a>
-        <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.naukri.com/mnjuser/profile?id=&altresid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           NAUKRI.COM
         </a>
-        <a href="/resume.pdf" download>
+        <a href={resume} download>
           RESUME
         </a>
       </div>

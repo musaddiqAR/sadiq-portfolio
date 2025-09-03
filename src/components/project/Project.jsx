@@ -1,34 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+
+import hms from "../../assets/hms.jpg";
+import ems from "../../assets/ems.jpg";
+import portfolio from "../../assets/portfolio.jpg";
+import certificate from "../../assets/certificate.jpg";
+import intership from "../../assets/intership.jpg";
 
 const projects = [
   {
     title: "Hospital Management System (OHMS)",
     subtitle: "Full Stack Development Project",
-    image: "/hms.jpg",
+    image: hms,
   },
   {
     title: "(CRUD) Employee Management System",
     subtitle: "Back-end Development Project",
-    image: "/ems.jpg",
+    image: ems,
   },
   {
     title: "Portfolio using JavaScript & ReactJS",
     subtitle: "Front-end Development Project",
-    image: "/portfolio.jpg",
+    image: portfolio,
   },
   {
     title: "Java Full Stack Development Certificate",
     subtitle: "Full Stack Certificate",
-    image: "/certificate.jpg",
+    image: certificate,
   },
   {
     title: "Internship Project (OHMS) Certificate",
     subtitle: "Internship Certificate",
-    image: "/intership.jpg",
+    image: intership,
   },
 ];
 
-const filters = ["All", "Front-end Development Project", "Back-end Development Project", "Full Stack Development Project"];
+const filters = [
+  "All",
+  "Front-end Development Project",
+  "Back-end Development Project",
+  "Full Stack Development Project",
+];
 
 const Project = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -48,7 +59,6 @@ const Project = () => {
         textAlign: "center",
       }}
     >
-      {/* Section Title */}
       <h2
         style={{
           fontSize: "28px",
@@ -60,7 +70,6 @@ const Project = () => {
         PROJECTS
       </h2>
 
-      {/* Filter Bar */}
       <div
         style={{
           display: "flex",
@@ -80,7 +89,9 @@ const Project = () => {
               padding: "8px 16px",
               borderRadius: "8px",
               background:
-                activeFilter === filter ? "rgba(111,255,233,0.1)" : "transparent",
+                activeFilter === filter
+                  ? "rgba(111,255,233,0.1)"
+                  : "transparent",
               transition: "0.3s ease",
             }}
             onClick={() => setActiveFilter(filter)}
@@ -90,7 +101,6 @@ const Project = () => {
         ))}
       </div>
 
-      {/* Projects Grid */}
       <div
         style={{
           display: "grid",
@@ -112,8 +122,12 @@ const Project = () => {
               flexDirection: "column",
               transition: "transform 0.3s ease",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-8px)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = "translateY(-8px)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.transform = "translateY(0)")
+            }
           >
             <img
               src={proj.image}
