@@ -1,0 +1,139 @@
+.education {
+  color: #fff;
+  padding: 80px 120px;
+  text-align: center;
+}
+
+.educationTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.educationContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.educationCard {
+  background: #111827;
+  border: 1px solid #374151;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  opacity: 0; /* for GSAP animation */
+  transform: translateY(50px);
+}
+
+.educationCard:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.educationCard h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.educationCard p {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+.highlightPink {
+  color: #ff2e9e;
+}
+
+.highlightBlue {
+  color: #38bdf8;
+}
+
+.highlightOrange {
+  color: #f97316;
+}
+
+/* 📱 Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .education {
+    padding: 60px 20px;
+  }
+
+  .educationTitle {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .educationContainer {
+    gap: 40px;
+  }
+
+  .educationCard {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 50px 15px;
+  }
+
+  .educationTitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .educationContainer {
+    grid-template-columns: 1fr; /* single column on tablets */
+    gap: 30px;
+  }
+
+  .educationCard {
+    padding: 30px;
+  }
+
+  .educationCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .educationCard p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 40px 10px;
+  }
+
+  .educationTitle {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+
+  .educationCard {
+    padding: 20px;
+  }
+
+  .educationCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .educationCard p {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}

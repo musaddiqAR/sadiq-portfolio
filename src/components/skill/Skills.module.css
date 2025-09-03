@@ -1,0 +1,146 @@
+.skillsSection {
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #ccc;
+  
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.skillBox {
+  background: #11152b;
+  
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.skillBox h3 {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #eee;
+}
+
+.skillBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillBox li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff00ff, #ff6600);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+.skillBox li svg {
+  margin-right: 10px;
+  color: #fff;
+  
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .skillBox {
+    width: 280px;
+    padding: 18px;
+  }
+
+  .skillBox h3 {
+    font-size: 17px;
+  }
+
+  .skillBox li {
+    font-size: 13.5px;
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsSection {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .skillsContainer {
+    gap: 20px;
+  }
+
+  .skillBox {
+    width: 100%; /* full width on tablets */
+    max-width: 400px;
+  }
+
+  .skillBox h3 {
+    font-size: 16px;
+  }
+
+  .skillBox li {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsSection {
+    padding: 30px 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .skillBox {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .skillBox h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .skillBox li {
+    font-size: 12.5px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+  }
+
+  .skillBox li svg {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+}

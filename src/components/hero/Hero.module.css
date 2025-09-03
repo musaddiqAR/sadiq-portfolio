@@ -1,0 +1,99 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  background: linear-gradient(90deg, #5eead4, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-family: "Fira Code", monospace;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #5eead4;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-12px);
+  }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+  .scrollDown {
+    font-size: 1.6rem;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+  .scrollDown {
+    font-size: 1.4rem;
+    bottom: 15px;
+  }
+}
